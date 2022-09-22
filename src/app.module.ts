@@ -5,7 +5,7 @@ import { CategoriasModule } from './categorias/categorias.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb+srv://papadadelporco:kHgNNmbo50v8FGfB@cluster0.eaffz6i.mongodb.net/smartrankingapi',
+    MongooseModule.forRoot(process.env.MONGODB_URL,
     { useNewUrlParser: true, 
       useUnifiedTopology: true,
      }),

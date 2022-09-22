@@ -29,7 +29,7 @@ export class CategoriasService {
     }
 
 
-    async consultarTodasCategorias(): Promise<Array<Categoria>> {
+    async consultarTodasCategorias(): Promise<Categoria[]> {
         return await this.categoriaModel.find().exec();
     }
 
